@@ -23,12 +23,31 @@
         <pre><code>console.log("Hey There")</code></pre>
     </div>
 
+    <div class="block">
+        <h4>Hey There, My name is <span id="username">Pranshu</span> :) </h4>
+        <p class="paragraph remove">Here is the code for you</p>
+        <pre><code>console.log("Hey There")</code></pre>
+    </div>
+
     <script>
         // getElementById
-        const ele = document.getElementById("username");
-        console.log(ele)
-        ele.innerText = "John Doe";
-        ele.classList.add('red-color','underline');
+        // const ele = document.getElementById("username");
+        // console.log(ele)
+        // ele.innerText = "John Doe";
+        // ele.classList.add('red-color','underline');
+
+        // getElementsByClassName
+        // const eles = document.getElementsByClassName('block')
+        // // it returns multiple elements, not a single element.
+        // for(let i = 0;i<eles.length;i++){
+        //     eles.item(i).style.background = "blue";
+        // }
+
+        // H.W
+        const removeEle = document.getElementsByClassName("paragraph remove");
+        for(let i = removeEle.length - 1; i >= 0; i--){
+            removeEle[i].remove();
+        }
 
     </script>
 </body>
